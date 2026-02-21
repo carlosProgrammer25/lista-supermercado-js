@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista SuperMercado</title>
+</head>
+<body>
+    <header>
+        <h2>App Lista de SuperMercado</h2>
+    </header>
+
+    <div class="lista">
+        <input type="text" placeholder="nome do produto..." name="nome_produto">
+        <input type="text" placeholder="Preço" name="value_produto" oninput="this.value=this.value.replace(/[^0-9.]/g,'').replace(/(\..*)\./g,'$1')"> 
+
+        <input type="submit" name="acao" value="Cadastrar">
+    </div><!--lista -->
+
+    <div class="lista_produtos"></div><!--lista_produtos-->
+    <div class="soma_produto">
+        <h1>Total: <span></span> </h1>
+    </div><!--soma_produto-->
+
+    <button class="esconder" name="limpar">Limpar</button>
+
+    <script src="script.js" ></script>
+</body>
+
+</html>
